@@ -6,7 +6,9 @@
 Body {
   background-color: cornsilk;
 }
-
+header h1 {
+  align-content: center;
+}
 article {
   opacity: 0;
   transition: 0.2s;
