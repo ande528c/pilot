@@ -9,7 +9,7 @@ Body {
 
 article {
   opacity: 0;
-  transition: 2s;
+  transition: 0.2s;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
