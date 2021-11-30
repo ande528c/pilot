@@ -2,12 +2,26 @@
   box-sizing: border-box;
   margin: 0;
 }
-
+p {
+  font-family: "IM Fell Great Primer SC", serif;
+}
 Body {
   background-color: cornsilk;
 }
-header h1 {
-  align-content: center;
+header {
+  background-image: url("billede1.webp");
+  background-size: cover;
+  max-height: 100vh;
+  width: 100%;
+}
+h1 {
+  margin-left: 250px;
+  padding-top: 146px;
+  color: whitesmoke;
+  font-size: 50px;
+}
+h2 {
+  margin-left: 100px;
 }
 article {
   opacity: 0;
@@ -24,7 +38,7 @@ article p {
   background-color: azure;
   border-color: black;
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+
   padding: 3px;
 }
 
@@ -38,11 +52,12 @@ button {
 div {
   opacity: 0;
   transition: 0.2s;
-  background-color: darkcyan;
+  background-color: aquamarine;
   max-width: fit-content;
   padding: 5px;
   display: flex;
   justify-content: right;
+  padding-bottom: 10px;
 }
 
 div.embed {
@@ -54,7 +69,7 @@ div p {
   border-color: black;
   border-width: 1rem;
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+
   padding: 3px;
 }
 iframe {
@@ -69,4 +84,24 @@ video {
   height: auto;
   display: block;
   aspect-ratio: 16/9;
+}
+
+img {
+  object-fit: cover;
+  max-width: 16rem;
+}
+
+#gallery {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 46px;
+  margin-left: 1rem;
+}
+#diagram {
+  object-fit: cover;
+  width: 100%;
+  padding: 50px;
 }
